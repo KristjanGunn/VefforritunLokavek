@@ -60,13 +60,18 @@
 		min-height: 400px;
 	}
 
+	.row {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
 	.story-footer {
 
 		line-height: 5px;
 	}
 
 	h1 {
-		font-size:4em;
+		font-size:3.25em;
 	}
 
 	h3 {

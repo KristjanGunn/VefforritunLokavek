@@ -57,6 +57,11 @@
 
 	}
 
+	.row {
+		max-width: 100%;
+		margin: 0 auto;
+	}
+
 	.story-box {
 		width: 100%;
 		float: left;
