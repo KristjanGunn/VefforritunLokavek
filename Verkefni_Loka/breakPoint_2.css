@@ -1,0 +1,107 @@
+
+
+@media (max-width: 800px) {
+  
+	body {
+		background-color: #f2f2f2;
+		font-size: 18px;
+	}
+
+	.main-wrap {
+		max-width: 800px;
+		margin: 0;
+	}
+
+	.header-items ul {
+
+		margin-left:1%;
+		margin-top: 0.5%;
+	}
+
+	.header-wrap:before {
+
+
+	margin-left:0.75%;
+
+	}
+
+	.banner {
+
+		width: 100%;
+
+		overflow: hidden;
+		height: 350px;
+
+		background-image: url("https://notendur.hi.is/sas55/Verkefni_4/images/Perrault2.jpg");
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+
+		background-position: 50% 18%;
+	}
+
+	.heading-container {
+
+		margin: 20%;
+		margin-left: 0%;
+		margin-right: 0%;
+
+		text-align: center;
+		background-color: #fff;	
+		background-color: rgba(255, 255, 255, 0.90);
+	}
+
+
+	.rows-container{
+		width: 100%;
+		float: left;
+
+	}
+
+	.story-box {
+		width: 100%;
+		float: left;
+		margin: 0;
+		margin-top: 0.5%;
+		margin-bottom: 0.5%;
+	}
+	.story-header {
+		width: 100%;
+		float: left;
+	}
+	.story-article {
+
+		min-height: 250px;
+		width: 100%;
+		float: left;
+		overflow: auto;
+	}
+	.story-footer {
+		width: 100%;
+		float: left;
+	}
+
+	.about-box {
+		width: 100%;
+		float: left;
+	}
+	.footer {
+		width: 100%;
+	}
+
+
+	p {
+		font-size: 1em;
+	}
+
+	h1 {
+		font-size:3em;
+	}
+
+	h2 {
+		font-size:2em;
+	}
+
+	h3 {
+		font-size:1.5em;
+	}
+}

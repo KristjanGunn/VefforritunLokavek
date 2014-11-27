@@ -1,0 +1,311 @@
+
+
+body {
+	background-color: #f2f2f2;
+	font-size: 16px;
+}
+
+p {
+
+	color: #262525;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	font-family: 'Roboto';
+	padding-left:2.5%;
+	padding-right: 2.5%;
+
+}
+
+h1 {
+	
+	font-size:5em;
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Niconne';
+
+}
+
+h2 {
+	
+	font-size:2em;
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Niconne';
+	padding-left: 2.5%;
+
+	
+	color: #fff;
+
+	margin-top:7.5px;
+}
+
+h3 {
+
+	font-size:1.5em;
+	font-weight: normal;
+	font-style: normal;
+	font-family: 'Roboto';
+	color: #262525;
+	padding-left:2.5%;
+}
+
+
+.main-wrap {
+	
+	max-width: 1200px;
+	min-width: 400px;
+
+	margin: 0 auto;
+
+	position: relative;
+}
+
+.header-wrap {
+
+	position: fixed;
+	top: 0px;
+	z-index: 9999;
+
+	border-bottom: solid gray;
+	border-bottom-width: 1px;
+
+
+}
+
+.header-wrap:before {
+
+	content: "";
+	position: absolute;
+	left:0;
+	bottom: 0;
+	margin-left: 7.25%;
+	width: 5%;
+	border-bottom: solid black;
+	border-bottom-width: 2px;
+
+}
+
+.header {
+
+	width: 1200px;
+	height: 35px;
+	left: 0px;
+
+	overflow: hidden;
+	background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.90);
+
+}
+
+.header-items ul {
+
+	margin: 0;
+	padding: 0;
+	list-style: none; 
+	list-style-type: none;
+	list-style-image: none;
+
+	margin-left: 7.75%;
+	margin-top: 0.5%;
+}
+
+.header-items li {
+
+	display: inline;
+
+	margin-right: 5%;
+
+	color: #262525;
+	font-size: 1em;
+	font-family: 'Roboto';
+	padding: 0.25%;
+}
+
+/*
+.active {
+
+	border: 1px solid red;
+	margin: 20px 0;
+	line-height: 20px;
+	border-bottom: 1px solid black;
+}
+*/
+
+.banner {
+
+	overflow: hidden;
+	height: 300px;
+
+	background-image: url("https://notendur.hi.is/sas55/Verkefni_4/images/Perrault1.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+
+	background-position: 50% 18%;
+
+}
+
+.heading-container {
+
+	margin: 10%;
+	margin-right: 22.5%;
+	margin-left: 22.5%;
+	text-align: center;
+	background-color: #fff;	
+	background-color: rgba(255, 255, 255, 0.90);
+}
+
+
+.rows-container {
+
+	overflow: hidden;
+
+	margin: 0 auto;
+	width: 85%;
+
+	margin-top: 0.75%;
+	margin-bottom: 0.75%;
+
+}
+
+.row {
+	width: 100%;
+	float: left;
+}
+
+
+.story-box {
+
+	float: left;
+	width: 48.75%;
+	border-color: #cacaca;
+	border-style: solid;
+
+	border-width: 1px;
+
+	margin: 0.5%;
+
+}
+
+.story-header {
+
+	height: 50px;
+	width: 100%;
+	float: left;
+	background-color: #822626;
+
+	padding: 0.75%;
+	padding-left: 0;
+	padding-right: 0;
+
+}
+
+.images img {
+
+	overflow: hidden;
+	max-width: 100%;
+	display: inline-block;
+}
+
+.story-article {
+
+	width: 100%;
+	min-height: 250px;
+	overflow: hidden;
+	float: left;
+
+
+}
+
+.story-footer {
+
+	height: 40px;
+	line-height: 12.5px;
+	width: 100%;
+	float: left;
+
+	padding:0;
+
+
+	background-color: #cacaca;
+}
+
+.about-box {
+	
+	float: left;
+	width: 48.75%;
+
+	margin: 0.5%;
+}
+
+div.about-box img {
+
+	overflow: hidden;
+	min-height: 200px;
+	max-width: 100%;
+	display: inline-block;
+}
+
+.story-footer:hover {
+
+	background-color: #822626;
+}
+
+.story-footer:hover .text-story-footer {
+	color: #fff;
+}
+
+.footer {
+
+	width: 100%;
+	background-color: #262525;
+	overflow: hidden;
+}
+
+.footer-heading {
+
+	float: left;
+	font-family: 'Niconne';
+
+	color:#e6ddbc;
+	font-size:1.5em;
+
+	margin-top: 1.5%;
+	margin-left: 3.5%;
+
+}
+
+.footer-items {
+
+	float: left;
+	font-size: 1em;
+
+	color:#e6ddbc;
+	font-family: 'Roboto';
+
+}
+
+.footer-items ul {
+
+	margin-top: 0;
+	margin-bottom: 1.5%;
+	margin-left: 7.5%;
+	margin-right: 5%;
+}
+
+.footer-items li {
+
+	margin-bottom: 0.25%;
+
+}
+
+a:link, a:visited {
+
+  text-decoration: none; color: #e6ddbc;
+
+}
+
+a:active, a:hover {
+
+	color: blue;
+}
