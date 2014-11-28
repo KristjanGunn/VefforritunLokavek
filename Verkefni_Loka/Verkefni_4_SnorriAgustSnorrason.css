@@ -142,7 +142,11 @@ h3 {
 	background-repeat: no-repeat;
 
 	background-position: 50% 18%;
+}
 
+.canvas {
+	width: 1200px;
+	height: 100%;
 }
 
 .heading-container {
@@ -310,4 +314,27 @@ a:link, a:visited {
 a:active, a:hover {
 
 	color: blue;
+}
+
+#myCanvas{
+    display:block;
+    margin:auto;
+    border: 1px solid black;
+}
+
+@-webkit-keyframes bgscroll {
+    from {background-position:0 0;}
+    to {background-position:0 -520px;}
+}
+.animation {
+  background: url(http://adamwhitcroft.com/batch/img/batch-background.png);
+  color:#ecf2f9;
+  text-align:center;
+  -webkit-animation:bgscroll 20s infinite linear;
+}
+
+.container {  
+  margin: 0 auto;
+  position: relative;
+  padding: 2em;
 }
