@@ -22,7 +22,7 @@ h1 {
 	font-size:3.5em;
 	font-weight: normal;
 	font-style: normal;
-	font-family: 'Niconne';
+	font-family: 'Audiowide';
 
 }
 
@@ -31,7 +31,7 @@ h2 {
 	font-size:2em;
 	font-weight: normal;
 	font-style: normal;
-	font-family: 'Niconne';
+	font-family: 'Audiowide';
 	padding-left: 2.5%;
 
 	
@@ -211,18 +211,8 @@ h3 {
 	margin: 0.25%;
 	overflow: hidden;
 	float: left;
-}
 
-.videoWrapper iframe {
 
-	margin: 1.5%;
-
-	width:500px;
-	height:350px;
-
-	border-color: #cacaca;
-	border-style: solid;
-	border-width: 1px;
 }
 
 .story-footer {
@@ -273,7 +263,7 @@ div.about-box img {
 .footer-heading {
 
 	float: left;
-	font-family: 'Niconne';
+	font-family: 'Audiowide';
 
 	color:#e6ddbc;
 	font-size:1.5em;
