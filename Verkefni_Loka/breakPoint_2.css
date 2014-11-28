@@ -79,6 +79,13 @@
 		float: left;
 		overflow: auto;
 	}
+
+	.videoWrapper iframe {
+
+		margin: 0 auto;
+		width:100%;
+	}
+	
 	.story-footer {
 		width: 100%;
 		float: left;

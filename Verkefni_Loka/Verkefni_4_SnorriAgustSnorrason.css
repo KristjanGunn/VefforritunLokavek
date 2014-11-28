@@ -211,8 +211,18 @@ h3 {
 	margin: 0.25%;
 	overflow: hidden;
 	float: left;
+}
 
+.videoWrapper iframe {
 
+	margin: 1.5%;
+
+	width:500px;
+	height:350px;
+
+	border-color: #cacaca;
+	border-style: solid;
+	border-width: 1px;
 }
 
 .story-footer {
