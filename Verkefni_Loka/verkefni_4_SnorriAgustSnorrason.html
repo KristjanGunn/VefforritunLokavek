@@ -29,7 +29,7 @@
 				</header>
 			</div>
 
-    		<div class="banner">
+			<div class="banner">
 			    <canvas id="myCanvas" width="1200" height="600">
 					Sorry, but your browser does not support the HTML5 canvas tag.
 				</canvas>
@@ -37,11 +37,13 @@
 			    	<h1>History of Computer Games</h1>
 			    </div>
     		</div>
+    		
 
     		<div class="rows-container">
 
     			<div class="row">
 	    			<section class="story-box">
+
 
 	    				<div class="story-header">
 	    					<h2>The Ferranti Mark 1 (1951)</h2>
@@ -267,9 +269,21 @@
 
     			<div class="row">
 		    		<section class="about-box">
-		    			<div class="images">
-		    				<img src="https://notendur.hi.is/sas55/Verkefni_4/images/Grimm.jpg" alt="Drawing of the Grimm brothers"> 
-		    			</div>
+		    			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
+							<div class="flipper">
+								<div class="front">
+									<div class="images">
+		    							<img src="Myndir/HI.jpg" alt="Drawing of the Grimm brothers"> 
+		    						</div>
+								</div>
+							<div class="back">
+								<div class="images">
+		    							<img src="Myndir/HIBak.jpg" alt="Drawing of the Grimm brothers"> 
+		    					</div>
+							</div>
+						</div>
+					</div>
+		    			
 		    		</section>
 
 		    		<section class="about-box">
