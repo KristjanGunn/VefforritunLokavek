@@ -1,18 +1,13 @@
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   
-	body {
-		background-color: #f2f2f2;
-		font-size: 18px;
-	}
 
 	.main-wrap {
-		max-width: 400px;
+		max-width: 600px;
 		margin: 0;
 	}
 
-	.row {
-		max-width: 100%;
-		margin: 0 auto;
+	.heading-container {
+		top: 60px;
 
 	}
 }

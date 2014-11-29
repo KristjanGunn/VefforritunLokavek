@@ -19,7 +19,7 @@ p {
 
 h1 {
 	
-	font-size:3.5em;
+	font-size:2.5em;
 	font-weight: normal;
 	font-style: normal;
 	font-family: 'Audiowide';
@@ -133,32 +133,21 @@ h3 {
 */
 
 .banner {
-
-	overflow: hidden;
-	height: 300px;
-
-	background-image: url("https://notendur.hi.is/sas55/Verkefni_4/images/Perrault1.jpg");
-	background-attachment: fixed;
-	background-repeat: no-repeat;
-
-	background-position: 50% 18%;
+	position: relative;
+	width: 100%;
 }
-/*
-#myCanvas{
-    width: 1200px;
-    height: 300px;
-    margin:auto;
-    border: 1px solid black;
+
+#myCanvas {
+	max-width: 100%;
 }
-*/
+
 .heading-container {
-
-	margin: 10%;
-	margin-right: 22.5%;
-	margin-left: 22.5%;
+	width: 100%;
 	text-align: center;
 	background-color: #fff;	
-	background-color: rgba(255, 255, 255, 0.90);
+	background-color: rgba(255, 255, 255, 0.750);
+	position: absolute;
+	top: 200px;
 }
 
 
@@ -217,8 +206,18 @@ h3 {
 	margin: 0.25%;
 	overflow: hidden;
 	float: left;
+}
 
+.videoWrapper iframe {
 
+	margin: 1.5%;
+
+	width:500px;
+	height:350px;
+
+	border-color: #cacaca;
+	border-style: solid;
+	border-width: 1px;
 }
 
 .story-footer {

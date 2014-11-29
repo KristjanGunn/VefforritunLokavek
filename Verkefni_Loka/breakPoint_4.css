@@ -1,0 +1,39 @@
+@media (max-width: 400px) {
+  
+	body {
+		background-color: #f2f2f2;
+		font-size: 18px;
+	}
+
+	.main-wrap {
+		max-width: 400px;
+		margin: 0;
+	}
+
+	.heading-container {
+		top: 50px;
+
+	}
+
+	.row {
+		max-width: 100%;
+		margin: 0 auto;
+
+	}
+
+	p {
+		font-size: 0.5em;
+	}
+
+	h1 {
+		font-size:1.5em;
+	}
+
+	h2 {
+		font-size:1em;
+	}
+
+	h3 {
+		font-size:0.75em;
+	}
+}
