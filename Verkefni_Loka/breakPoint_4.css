@@ -11,7 +11,7 @@
 	}
 
 	.heading-container {
-		top: 50px;
+		top: 25px;
 
 	}
 
@@ -21,12 +21,16 @@
 
 	}
 
+	.heading-container {
+		top: 50px;
+	}
+
 	p {
 		font-size: 0.5em;
 	}
 
 	h1 {
-		font-size:1.5em;
+		font-size:1.1em;
 	}
 
 	h2 {

@@ -79,9 +79,6 @@ var KEY_RESET = keyCode('R');
 
 var KEY_0 = keyCode('0');
 
-var KEY_1 = keyCode('1');
-
-var KEY_K = keyCode('K');
 
 function processDiagnostics() {
 
@@ -100,14 +97,6 @@ function processDiagnostics() {
 
     if (eatKey(KEY_0)) entityManager.toggleRocks();
 
-    if (eatKey(KEY_1)) entityManager.generateShip({
-        cx : g_mouseX,
-        cy : g_mouseY,
-        
-        sprite : g_sprites.ship});
-
-    if (eatKey(KEY_K)) entityManager.killNearestShip(
-        g_mouseX, g_mouseY);
 }
 
 
@@ -128,6 +117,7 @@ function processDiagnostics() {
 function renderSimulation(ctx) {
 
     entityManager.render(ctx);
+    g_score.render(ctx);
 
     if (g_renderSpatialDebug) spatialManager.render(ctx);
 }

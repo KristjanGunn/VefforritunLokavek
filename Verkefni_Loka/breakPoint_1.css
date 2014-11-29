@@ -12,7 +12,7 @@
 	}
 
 	.heading-container {
-		top: 150px;
+		top: 100px;
 	}
 
 
@@ -31,9 +31,6 @@
 		margin-top: 0.5%;
 	}
 
-	.heading-container {
-		left: 2.5px;
-	}
 
 	.header-wrap:before {
 
@@ -63,7 +60,11 @@
 	}
 
 	h1 {
-		font-size:2.25em;
+		font-size:2em;
+	}
+
+	h2 {
+		font-size:1.5em;
 	}
 
 	h3 {

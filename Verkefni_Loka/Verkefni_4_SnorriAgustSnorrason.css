@@ -137,6 +137,8 @@ h3 {
 	width: 100%;
 }
 
+
+
 #myCanvas {
 	max-width: 100%;
 }
@@ -147,7 +149,7 @@ h3 {
 	background-color: #fff;	
 	background-color: rgba(255, 255, 255, 0.750);
 	position: absolute;
-	top: 200px;
+	top: 125px;
 }
 
 
@@ -166,6 +168,8 @@ h3 {
 	margin-right: 5%;
 	float: left;
 }
+
+
 
 
 .story-box {
@@ -225,13 +229,9 @@ h3 {
 	line-height: 12.5px;
 	width: 100%;
 	float: left;
-
 	padding:0;
-
-
 	background-color: #cacaca;
 }
-
 
 .about-box {
 	

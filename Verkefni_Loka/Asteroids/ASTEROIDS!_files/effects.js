@@ -46,7 +46,6 @@ Effect.prototype.render = function(ctx){
     //Rendering for fireblast
     if(this.type === "FIREBLAST" || this.type ==="BLAST") {
         this.activeSprite[this.animFrame].drawCentredAt(ctx,this.cx,this.cy, this.rotation);
-        console.log(this.activeSprite[this.animFrame]);
     }
 
     this.activeSprite[this.animFrame].scale = origScale;

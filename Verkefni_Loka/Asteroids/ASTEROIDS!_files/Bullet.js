@@ -71,6 +71,10 @@ Bullet.prototype.update = function (du) {
     //
     var hitEntity = this.findHitEntity();
     if (hitEntity) {
+        if (hitEntity instanceof Ship) {
+            newScore();
+            g_score.score = 0;
+        }
         var canTakeHit = hitEntity.takeBulletHit;
         if (canTakeHit) canTakeHit.call(hitEntity); 
         return entityManager.KILL_ME_NOW;

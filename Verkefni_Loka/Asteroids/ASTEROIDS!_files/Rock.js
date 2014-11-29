@@ -61,8 +61,6 @@ Rock.prototype.randomiseVelocity = function () {
 
 Rock.prototype.update = function (du) {
 
-    // TODO: YOUR STUFF HERE! --- Unregister and check for death
-
     spatialManager.unregister(this);
 
     if (this._isDeadNow) {
@@ -77,8 +75,8 @@ Rock.prototype.update = function (du) {
                                    0, consts.FULL_CIRCLE);
 
     this.wrapPosition();
-    
-    // TODO: YOUR STUFF HERE! --- (Re-)Register
+
+    console.log(g_SCORE);
 
     spatialManager.register(this);
 
@@ -97,6 +95,7 @@ Rock.prototype.evaporateSound = new Audio(
 Rock.prototype.takeBulletHit = function () {
     this.kill();
     
+    g_score.score +=10;
     entityManager.generateEffect(this.cx,this.cy, this.rotation, "FIREBLAST");
 
     if (this.scale > 0.25) {

@@ -13,6 +13,9 @@
 
 
 // A generic contructor which accepts an arbitrary descriptor object
+
+var g_SCORE = 0;
+
 function Ship(descr) {
 
     // Common inherited setup logic from Entity
@@ -138,7 +141,6 @@ Ship.prototype.update = function (du) {
         return entityManager.KILL_ME_NOW;
     }
     
-    // TODO: YOUR STUFF HERE! --- Unregister and check for death
 
     // Perform movement substeps
     var steps = this.numSubSteps;
@@ -150,9 +152,9 @@ Ship.prototype.update = function (du) {
     // Handle firing
     this.maybeFireBullet();
 
-    // TODO: YOUR STUFF HERE! --- Warp if isColliding, otherwise Register
-
     if (this.isColliding()) {
+        newScore();
+        g_score.score = 0;
         this.warp();
     }
     else {
