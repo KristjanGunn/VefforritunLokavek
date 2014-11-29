@@ -8,9 +8,10 @@ document.addEventListener('DOMContentLoaded',function()
     showHide("storyThree","theBrownBox");
     showHide("storyFour","atari");
     showHide("storyFive","videoGameCrash");
-    showHide("storySix","consoleWar");
-    showHide("storySeven","pcGaming");
-    showHide("storyEight","today");
+    showHide("storySix","nintendo");
+    showHide("storySeven","consoleWar");
+    showHide("storyEight","pcGaming");
+    showHide("storyNine","today");
 });
 
 // A function to hide or show an element when

@@ -15,6 +15,11 @@
 		top: 150px;
 	}
 
+
+	ul.enlarge {
+    	display:none;
+	}
+
 	.header-items ul {
 		margin: 0;
 		padding: 0;
