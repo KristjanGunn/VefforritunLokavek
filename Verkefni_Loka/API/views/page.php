@@ -10,14 +10,19 @@
 	</head>
 	<body>
 		<h1>Tónleikar</h1>
+
+			<div id="tracker">
+				<input type="search" name="searchCompany" id="inputSearch" class="search">
+			</div>	
+
 		<?php
 
 
 //check if you have curl loaded
 if(!function_exists("curl_init")) die("cURL extension is not installed");
+$query = "elder scrolls";
 
-$url = 'http://www.giantbomb.com/api/search/?api_key=4cd2262e2399bb08f1507d97726ad8b5d34cebbc&format=json&query=%22elder%20scrolls%20online%22&resources=game&field_list=name,description';
-
+$url = 'http://www.giantbomb.com/api/search/?api_key=4cd2262e2399bb08f1507d97726ad8b5d34cebbc&format=json&query=' . $query . 'resources=game&field_list=name,description,image';
 //$url = 'http://www.giantbomb.com/api/search/?api_key=4cd2262e2399bb08f1507d97726ad8b5d34cebbc&format=json&query=batman';
 $ch=curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
@@ -32,9 +37,14 @@ $arr = json_decode($r,true);
 		foreach($arr['results'] as $val)
 
 		{
-			echo "<div class='container'>";
-			echo "<div class='Schedule'>";
+			echo "<div class='main-wrap'>"; 
+			echo "<div class='story-box'>";
 			echo  "<h2>" . $val['name'] . "</h2>";
+			$a = $val['image']['screen_url'];
+			echo '<br>';
+				echo "<div class='images'>";
+			echo "<img src=\"".$a."\">";
+			echo "</div>";
 			echo "</div>";
 			echo "</div>";  
 
@@ -43,3 +53,6 @@ $arr = json_decode($r,true);
 ?>		
 	</body>
 </html>
+
+
+
