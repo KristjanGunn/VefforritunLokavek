@@ -2,7 +2,7 @@
 
 body {
 	font-size: 16px;
-	margin: 0;
+	top: 0px;
 	padding: 0;
 }
 
@@ -41,10 +41,7 @@ h2 {
 	font-weight: normal;
 	font-style: normal;
 	font-family: 'Audiowide';
-	padding-left: 2.5%;
-
-	
-	color: #fff;
+	padding-left: 2.5%;	
 
 	margin-top:7.5px;
 }
@@ -58,6 +55,22 @@ h3 {
 	color: #262525;
 	padding-left:2.5%;
 }
+
+.gameSearchText {
+	color: black;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1em;
+	font-family: 'Roboto';
+	margin-left:2.5%;
+	margin-right: 2.5%;
+	margin-top: 7.5%;
+}
+
+#query {
+	margin-left: 5%;
+}
+
 
 
 .main-wrap {
@@ -149,9 +162,8 @@ body.down header.animateIt {
 .banner {
 	position: relative;
 	width: 100%;
+	height: 100%;
 }
-
-
 
 #myCanvas {
 	max-width: 100%;
@@ -185,8 +197,6 @@ body.down header.animateIt {
 }
 
 
-
-
 .story-box {
 	background-color: #f2f2f2;
 	float: left;
@@ -204,11 +214,35 @@ body.down header.animateIt {
 	width: 100%;
 	float: left;
 	background-color: #822626;
-
+	color: #fff;
 	padding: 0.75%;
 	padding-left: 0;
 	padding-right: 0;
 
+}
+
+.bannerS {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.story-boxS {
+	background-color: #f2f2f2;
+	float: left;
+	width: 99.5%;
+	border-color: #cacaca;
+	border-style: solid;
+}
+
+
+.story-headerS {
+
+	height: 50px;
+	width: 100%;
+	float: left;
+	background-color: #822626;
+	color: #fff;
 }
 
 .images img {
@@ -218,8 +252,37 @@ body.down header.animateIt {
 	display: inline-block;
 }
 
-.story-article {
+.imagesS img {
 
+	overflow: hidden;
+	width: 50%;
+	display: inline-block;
+	-moz-border-radius: 75px/50px;
+	-webit-border-radius: 75px/50px;
+	border-radius: 75px/50px;
+
+}
+
+.wrapperImagesS {
+	margin-top: 5%;
+	margin-left: 32.5%;
+}
+
+.story-articleS {
+	width: 100%;
+	height: 100%;
+	float: left;
+	font-size: 1.25em;
+}
+
+#disabled a:link {
+	pointer-events: none;
+	cursor: default;
+	color: #000000;
+}
+
+
+.story-article {
 	width: 100%;
 	height: 100%;
 	margin: 0.25%;
@@ -283,9 +346,9 @@ section.about-box img {
 .flip-container {
 	perspective: 1000;
 }
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
-		transform: rotateY(180deg);
-	}
+.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+}
 
 .flip-container, .front, .back {
 	width: 100%;
