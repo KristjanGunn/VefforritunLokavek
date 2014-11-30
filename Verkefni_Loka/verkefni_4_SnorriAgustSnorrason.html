@@ -16,18 +16,15 @@
     <body>
 
     	<main class="main-wrap">
-
-    		<div class="header-wrap">	
-		    	<header class="header">
-		    		<div class="header-items">
-					    <ul>
-		    				<li class="active">HOME</li>
-		    				<li>STORIES</li>
-		    				<li>ABOUT</li>
-						</ul>
-					</div>
-				</header>
-			</div>
+			
+		    <header>
+		    	<div id="headerStuff">
+		    		<ul>
+				    	<a href="#"><li class="button">HOME</li></a>
+				    	<a href="#"><li class="button">GAMES</li></a>
+				    </ul>
+			    </div>
+			</header>
 
 			<div class="banner">
 			    <canvas id="myCanvas" width="1200" height="400">
@@ -349,27 +346,29 @@
 	    			</section>
     			</div>
 
-    			<div class="row">
+    			<div class="row" id="middle">
 		    		<section class="about-box">
 		    			<div class="flip-container" ontouchstart="this.classList.toggle('hover');">
 							<div class="flipper">
 								<div class="front">
 									<div class="images">
-		    							<img src="Myndir/HI.jpg" alt="Drawing of the Grimm brothers"> 
+		    							<img src="Myndir/HI.jpg" alt="University of Iceland logo"> 
 		    						</div>
 								</div>
-							<div class="back">
-								<div class="images">
-		    							<img src="Myndir/HIBak.jpg" alt="Drawing of the Grimm brothers"> 
-		    					</div>
+								<div class="back">
+									<div class="images">
+			    						<img src="Myndir/HIBak.jpg" alt="The essence of CSS"> 
+			    					</div>
+								</div>
 							</div>
 						</div>
-					</div>
 		    			
 		    		</section>
 
 		    		<section class="about-box">
-		    			<p>This website was created for the Web Programming course at the University of Iceland by: Kristján Gunnarsson and Snorri Ágúst Snorrason</p>
+		    			<div id="aboutProject">
+		    				<p>This website was created for the Web Programming course at the University of Iceland by: Kristján Gunnarsson and Snorri Ágúst Snorrason</p>
+		    			</div>
 	    			</section>
 	    		</div>
 
@@ -399,12 +398,11 @@
 						</ul>
 				</div>
 	    	</footer>
+
+	    	<script src="jquery-1.11.1.js"></script>
+	    	<script type="text/javascript" src="header.js"></script>
+	    	<script src="hideShowStories.js"></script>
     	</main>
-    	<script src="hideShowStories.js"></script>
-
-	    <div id="output"></div>
-
-	    <script src="//ajax.googleapis.com/ajax/libs/mootools/1.4.5/mootools-yui-compressed.js"></script>
 
 	    <script src="./Asteroids/ASTEROIDS!_files/globals.js"></script>
 	    <script src="./Asteroids/ASTEROIDS!_files/consts.js"></script>

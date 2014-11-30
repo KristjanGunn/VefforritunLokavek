@@ -76,8 +76,6 @@ Rock.prototype.update = function (du) {
 
     this.wrapPosition();
 
-    console.log(g_SCORE);
-
     spatialManager.register(this);
 
 };
@@ -85,12 +83,6 @@ Rock.prototype.update = function (du) {
 Rock.prototype.getRadius = function () {
     return this.scale * (this.sprite.width / 2) * 0.9;
 };
-
-// HACKED-IN AUDIO (no preloading)
-Rock.prototype.splitSound = new Audio(
-  "sounds/rockSplit.ogg");
-Rock.prototype.evaporateSound = new Audio(
-  "sounds/rockEvaporate.ogg");
 
 Rock.prototype.takeBulletHit = function () {
     this.kill();
@@ -101,10 +93,6 @@ Rock.prototype.takeBulletHit = function () {
     if (this.scale > 0.25) {
         this._spawnFragment();
         this._spawnFragment();
-        
-        this.splitSound.play();
-    } else {
-        this.evaporateSound.play();
     }
 };
 

@@ -1,8 +1,17 @@
 
 
 body {
-	background-color: #f2f2f2;
 	font-size: 16px;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	background: url(Myndir/BG8.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
 
 p {
@@ -61,76 +70,81 @@ h3 {
 	position: relative;
 }
 
-.header-wrap {
-
-	position: fixed;
-	top: 0px;
-	z-index: 9999;
-
-	border-bottom: solid gray;
-	border-bottom-width: 1px;
-
-
-}
-
-.header-wrap:before {
-
-	content: "";
-	position: absolute;
-	left:0;
-	bottom: 0;
-	margin-left: 7.25%;
-	width: 5%;
-	border-bottom: solid black;
-	border-bottom-width: 2px;
-
-}
-
-.header {
-
-	width: 1200px;
-	height: 35px;
-	left: 0px;
-
-	overflow: hidden;
-	background-color: #fff;
-    background-color: rgba(255, 255, 255, 0.90);
-
-}
-
-.header-items ul {
-
+#headerStuff ul {
+	list-style-type: none;
 	margin: 0;
 	padding: 0;
-	list-style: none; 
-	list-style-type: none;
-	list-style-image: none;
-
-	margin-left: 7.75%;
-	margin-top: 0.5%;
 }
 
-.header-items li {
-
+#headerStuff ul li {
 	display: inline;
-
-	margin-right: 5%;
-
-	color: #262525;
-	font-size: 1em;
-	font-family: 'Roboto';
-	padding: 0.25%;
+	margin-left: 1.25%;
 }
 
-/*
-.active {
+#headerStuff ul li a {
+	text-decoration: none;
+	padding: .25em;
 
-	border: 1px solid red;
-	margin: 20px 0;
-	line-height: 20px;
-	border-bottom: 1px solid black;
 }
-*/
+
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background-color: #822626;
+}
+header.animateIt {
+    position:fixed;
+    max-width: 1200px;
+    min-width: 400px;
+    margin: 0 auto;
+    top:-60px;
+    left: 0px;
+    right: 0;
+    z-index:999;
+    background-color: #822626;
+    border: 1px solid black;
+    transition:0.4s top cubic-bezier(.3, .73, .3, .74);
+}
+
+body.down header.animateIt {
+    top:0;
+}
+
+.button {
+   border-top: 1px solid #000000;
+   background: #940a0a;
+   background: -webkit-gradient(linear, left top, left bottom, from(#000000), to(#940a0a));
+   background: -webkit-linear-gradient(top, #000000, #940a0a);
+   background: -moz-linear-gradient(top, #000000, #940a0a);
+   background: -ms-linear-gradient(top, #000000, #940a0a);
+   background: -o-linear-gradient(top, #000000, #940a0a);
+   padding: 7px 14px;
+   -webkit-border-radius: 40px;
+   -moz-border-radius: 40px;
+   border-radius: 40px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 16px;
+   font-family: Georgia, Serif;
+   text-decoration: none;
+   vertical-align: middle;
+}
+
+.button:hover {
+   border-top-color: #000000;
+   background: #000000;
+   color: #ccc;
+}
+
+.button:active {
+   border-top-color: #0b88db;
+   background: #0b88db;
+}
 
 .banner {
 	position: relative;
@@ -163,6 +177,7 @@ h3 {
 }
 
 .row {
+
 	max-width: 100%;
 	margin-left: 5%;
 	margin-right: 5%;
@@ -173,7 +188,7 @@ h3 {
 
 
 .story-box {
-
+	background-color: #f2f2f2;
 	float: left;
 	width: 100%;
 	border-color: #cacaca;
@@ -209,6 +224,7 @@ h3 {
 	height: 100%;
 	margin: 0.25%;
 	float: left;
+	font-size: 1.25em;
 }
 
 .videoWrapper iframe {
@@ -233,27 +249,40 @@ h3 {
 	background-color: #cacaca;
 }
 
+#aboutProject {
+	width: 100%;
+	background-color: #cacaca;
+	border: 1px solid black;
+	-moz-border-radius: 75px/50px;
+	-webit-border-radius: 75px/50px;
+	border-radius: 75px/50px;
+	padding: 2%;
+}
+
 .about-box {
 	
 	float: left;
-	width: 48.75%;
-
+	width: 49%;
 	margin: 0.5%;
 }
 
-div.about-box img {
-
-	overflow: hidden;
-	min-height: 200px;
-	max-width: 100%;
-	display: inline-block;
+#middle {
+	margin-left: 10%;
 }
 
-/* entire container, keeps perspective */
+section.about-box img {
+	height: 110px;
+	overflow: hidden;
+	display: inline-block;
+	border: 1px solid black;
+	-moz-border-radius: 75px/50px;
+	-webit-border-radius: 75px/50px;
+	border-radius: 75px/50px;
+}
+
 .flip-container {
 	perspective: 1000;
 }
-	/* flip the pane when hovered */
 	.flip-container:hover .flipper, .flip-container.hover .flipper {
 		transform: rotateY(180deg);
 	}
@@ -263,7 +292,7 @@ div.about-box img {
 	height: 100%;
 }
 
-/* flip speed goes here */
+
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
@@ -271,7 +300,6 @@ div.about-box img {
 	position: relative;
 }
 
-/* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
 
@@ -280,14 +308,12 @@ div.about-box img {
 	left: 0;
 }
 
-/* front pane, placed above back */
 .front {
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
 }
 
-/* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
 }
@@ -360,6 +386,10 @@ a:active, a:hover {
 	color: blue;
 }
 
+img.back {
+	width: 100%;
+	height: 20px;
+}
 
 ul.enlarge{
 	list-style-type:none; /*remove the bullet point*/

@@ -2,10 +2,10 @@ var g_score =  {
 
 	cx : 0,
 	cy : 0,
-	width: 1000,
 	margin: 10,
-	score: 0,
-	height: 450
+	marginHS: 40,
+	marginINSTR: 440,
+	score: 0
 }
 
 g_score.render = function(ctx) {
@@ -13,13 +13,19 @@ g_score.render = function(ctx) {
 	ctx.fillStyle = "white";
 	ctx.beginPath();
 	ctx.font="bold 20px Audiowide";
-	ctx.fillText("SCORE: " + this.score, this.margin, g_canvas.height-this.margin*4);
+	ctx.fillText("SCORE: " + this.score, this.margin, g_canvas.height-this.marginHS);
 	ctx.closePath();
 
 	ctx.fillStyle = "white";
 	ctx.beginPath();
 	ctx.font="bold 20px Audiowide";
-	ctx.fillText("SCORE: " + localStorage.getItem("score"), this.margin, g_canvas.height-this.margin);
+	ctx.fillText("YOUR HIGH SCORE: " + localStorage.getItem("score"), this.margin, g_canvas.height-this.margin);
+	ctx.closePath();
+
+	ctx.fillStyle = "white";
+	ctx.beginPath();
+	ctx.font="bold 20px Audiowide";
+	ctx.fillText("FLY WITH W,A,S,D AND SHOOT WITH Q", g_canvas.width-this.marginINSTR, g_canvas.height-this.margin);
 	ctx.closePath();
 }
 
