@@ -11,19 +11,38 @@
 	<body>
 		<h1>Tónleikar</h1>
 
-			<div id="tracker">
-				<input type="search" name="searchCompany" id="inputSearch" class="search">
-			</div>	
+
+<form method="get">
+    Inserisci number1: 
+    <input type="text" name="query" id="query"></input>
+
+        <br></br>
+
+    <input type="submit" value="send"></input>
+</form>
+
+<?php
+if( isset($_GET['submit']) )
+{
+    //be sure to validate and clean your variables
+    $query = htmlentities($_GET['query']);
+
+    //then you can use them in a PHP function. 
+    $result = search();
+}
+?>
+<?php if( isset($result) ) echo $result; //print the result above the form ?>
 
 		<?php
 
 
 //check if you have curl loaded
 if(!function_exists("curl_init")) die("cURL extension is not installed");
-$query = "elder scrolls";
 
-$url = 'http://www.giantbomb.com/api/search/?api_key=4cd2262e2399bb08f1507d97726ad8b5d34cebbc&format=json&query=' . $query . 'resources=game&field_list=name,description,image';
-//$url = 'http://www.giantbomb.com/api/search/?api_key=4cd2262e2399bb08f1507d97726ad8b5d34cebbc&format=json&query=batman';
+function search(){
+//$query = "batman";
+//$url = 'http://www.giantbomb.com/api/search/?api_key=4cd2262e2399bb08f1507d97726ad8b5d34cebbc&format=json&query=' . $query . 'resources=games&field_list=name,image';
+$url = 'http://www.giantbomb.com/api/search/?api_key=4cd2262e2399bb08f1507d97726ad8b5d34cebbc&format=json&query=' . $query;
 $ch=curl_init($url);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $r=curl_exec($ch);
@@ -49,8 +68,9 @@ $arr = json_decode($r,true);
 			echo "</div>";  
 
 		}
+}
+?>	
 
-?>		
 	</body>
 </html>
 
