@@ -1,6 +1,6 @@
 <?php
 
-/*
+
 $cachefile ='cache/'.basename($_SERVER['SCRIPT_URI']);
 $cachetime = 10 * 60; // 10 min
 if (file_exists($cachefile) && (time() - $cachetime < filemtime($cachefile))) {
@@ -9,7 +9,7 @@ echo "<!-- Cached ".date('jS F Y H:i', filemtime($cachefile))." -->";
 exit;
 }
 ob_start();
-*/
+
 
 header('Content-Type: text/html; charset=utf-8');
 
@@ -55,9 +55,8 @@ if (DEBUG)
 	include('views/debug.php');
 }
 
-/*
+
 $fp = fopen($cachefile, 'w'); 
 fwrite($fp, ob_get_contents()); 
 fclose($fp); 
 ob_end_flush();
-*/
