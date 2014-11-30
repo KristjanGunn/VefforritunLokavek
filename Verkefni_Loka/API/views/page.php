@@ -18,9 +18,9 @@
 		    		<ul>
 				    	<a href="https://notendur.hi.is/sas55/Lokaverkefni/verkefni_4_SnorriAgustSnorrason.html">
 				    		<li class="button">HOME</li></a>
-				    	<a href="https://notendur.hi.is/sas55/Lokaverkefni/API/">
+				    	<a href="https://notendur.hi.is/sas55/Lokaverkefni/API">
 				    		<li class="button">GAMES</li></a>
-				    	<a href="https://notendur.hi.is/sas55/Lokaverkefni/API/">
+				    	<a href="https://notendur.hi.is/~sas55/Lokaverkefni/guestbook/gest.php">
 				    		<li class="button">GUESTBOOK</li></a>
 				    </ul>
 			    </div>

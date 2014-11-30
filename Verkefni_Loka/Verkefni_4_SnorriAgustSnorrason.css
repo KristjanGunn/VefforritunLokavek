@@ -56,34 +56,29 @@ h3 {
 	padding-left:2.5%;
 }
 
-<<<<<<< HEAD
 label {
 
 	color: #262525;
-=======
-.gameSearchText {
-	color: black;
->>>>>>> origin/master
 	font-weight: normal;
 	font-style: normal;
 	font-size: 1em;
 	font-family: 'Roboto';
-<<<<<<< HEAD
-	padding-left:2.5%;
-	padding-right: 2.5%;
+	margin-left:5%;
 }
-=======
-	margin-left:2.5%;
-	margin-right: 2.5%;
+
+.gameSearchText {
+	margin-left: 2.5%;
 	margin-top: 7.5%;
+}
+
+.buttonsGuestB {
+	margin-left: 2.5%;
 }
 
 #query {
 	margin-left: 5%;
 }
 
-
->>>>>>> origin/master
 
 .main-wrap {
 	
@@ -189,6 +184,7 @@ body.down header.animateIt {
 	position: absolute;
 	top: 125px;
 }
+
 
 
 .rows-container {
@@ -505,6 +501,7 @@ ul.enlarge span{
 	-moz-border-radius: 8px; 
 	border-radius:8px;
 }
+
 ul.enlarge li:hover{
 	z-index: 50;
 	cursor:pointer;

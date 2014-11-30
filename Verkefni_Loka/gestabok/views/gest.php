@@ -38,12 +38,10 @@
                 <div class="field">
                   <p>Name:</p>
                   <input name="name" type="text" maxlength="20" id="name" />
-                  <span class="error"><?php echo $nameRequired;?></span>
                 </div>
                 <div class="field">
                   <p>Comment:  </p>
                   <textarea name="comment" type="text" id="comment" maxlength="50" /> </textarea>
-                  <span class="error"><?php echo $commentRequired;?></span>
                 </div>  
         
                 <p>&nbsp;</p>
@@ -57,27 +55,13 @@
       </div>
 
       <?php
+
         $today = "";
         $month = "";
         $day = "";
         $year = "";
         $person = "" ;
         $comment = "" ;
-
-        if( isset($_GET['submit']))
-        {
-            //be sure to validate and clean your variables
-            //then you can use them in a PHP function. 
-            $result = search();
-        }
-
-        if( isset($result) ) echo $result; //print the result above the form 
-
-        //check if you have curl loaded
-        if(!function_exists("curl_init")) die("cURL extension is not installed");
-        if (empty($_GET['name'])) {
-          echo "<h2>Name missing</h2>";          
-        }
 
         // Read from ("gestabok.dat");
         if (file_exists("gestabok.dat"))
@@ -88,6 +72,7 @@
              $line1 = fgets($file);
              $line2 = fgets($file);
              $line3 = fgets($file);
+
 
           echo "<div class='story-boxS'>";
 
