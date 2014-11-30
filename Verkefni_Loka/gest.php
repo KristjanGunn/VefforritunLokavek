@@ -33,11 +33,11 @@
                   <div class="field">
                     <label for="text">Comment:  </label>
                     <textarea name="comment" type="text" size="1100px" id="input2" maxlength="400" /> </textarea>
-                  </div>  
+                  </div>   
           
                   <p>&nbsp;</p>
           
-                  <input name="submit" type="submit" value="Submit" id="button1" class="button" />                  
+                  <input name="submit" type="submit" value="Submit" id="button1" class="button" onClick="history.go(0)" VALUE="Refresh" />                  
                   <input name="reset" type="reset" value="Reset" id="button2" class="button" />
                   <p>&nbsp;</p>
               </form>
@@ -79,6 +79,7 @@
             echo "</div>";
                     }
                     fclose($file);
+
                 }
             else
                 {
@@ -105,6 +106,7 @@
                         file_put_contents("gestabok.dat", "$person\n", FILE_APPEND);
                         file_put_contents("gestabok.dat", "$comment\n", FILE_APPEND);
 
+
                     }
                 else 
                     {
@@ -115,15 +117,8 @@
                         file_put_contents("gestabok.dat", "$person\n");
                         file_put_contents("gestabok.dat", "$comment\n");
                     }
-                                           // clear temp files
-
-
- //                   <script type="text/javascript">
-
-   //                   window.location = "gest.php"
-
-     //               </script> 
                 }
+
         ?>
 
 
